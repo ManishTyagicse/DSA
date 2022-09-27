@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @Manish.Tyagi
+- 👋 Hi, I’m  Manish Tyagi
 - 👀 I’m interested in Web Development
 - 🌱 I’m currently learning
 - 💞️ I’m looking to collaborate on ...
