@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int fun1(int n)
+{
+    if(n==0)
+     return 0;
+    return n+fun1(n-1);
+    
+}
+
+int main() {
+
+	int sum=fun1(5);
+	cout<<sum;
+	return 0;
+}
