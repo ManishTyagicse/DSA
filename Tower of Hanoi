@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+void TowerofHanoi(int n,char S,char M,char D)
+{
+    if(n==1)
+    {
+        cout<<"Move from "<<S<<"to "<<D<<endl;
+        return;
+    }
+    TowerofHanoi(n-1,S,D,M);
+    cout<<"Move from "<<S<<"to "<<D<<endl;
+    TowerofHanoi(n-1,M,S,D);
+    
+}
+int main() {
+	
+	int n=5;
+    TowerofHanoi(5,'S','M','D');
+	return 0;
+}
