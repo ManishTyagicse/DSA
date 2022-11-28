@@ -1,0 +1,53 @@
+//{ Driver Code Starts
+//Initial Template for C++
+
+
+#include <iostream>
+using namespace std;
+
+
+// } Driver Code Ends
+//User function Template for C++
+
+class Solution{
+  public:
+    //Complete this function
+    int sumofdigits(int n)
+    {
+         if(n==0)
+          return 0;
+         return (n%10+sumofdigits(n/10));
+    }
+    int digitalRoot(int n)
+    {
+        int dsum=0;
+        int sum=sumofdigits( n);
+        while(sum>9)
+         sum=sumofdigits(sum);
+        
+        return sum;
+        
+      
+    }
+};
+
+//{ Driver Code Starts.
+
+
+int main() {
+	int T;
+	cin>>T;//taking testcases
+	while(T--)
+	{
+	    int n;
+	    cin>>n;//taking number n
+	    
+	    //calling digitalRoot() function
+	    Solution obj;
+	    cout<<obj.digitalRoot(n)<<endl;
+	    
+	    
+	}
+	return 0;
+}
+// } Driver Code Ends
