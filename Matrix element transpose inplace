@@ -1,0 +1,36 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int A[10][10],B[10][10];
+    int n,i,j,temp;
+    cout<<"Enter the size of the matrix";
+    cin>>n;
+    cout<<"Enter the elements of the matrix\n";
+    for(i=0;i<n;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+            cin>>A[i][j];
+        }
+    }
+    cout<<"Elements of the matrix\n";
+    for(i=0;i<n;i++)
+    {
+        cout<<"\n";
+        for(j=0;j<n;j++)
+        {
+            cout<<A[i][j]<<" ";
+        }
+    }
+    cout<<"Elements after transpose are\n";
+    for(i=0;i<n;i++)
+    {
+        cout<<"\n";
+        for(j=0;j<n;j++)
+        {
+            cout<<A[j][i]<<" ";
+        }
+    }
+    return 0;
+}
